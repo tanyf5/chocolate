@@ -1,0 +1,123 @@
+.bestsellers-section {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bestsellers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  background-color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.bestsellers-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  height: 72px;
+  overflow: hidden;
+}
+
+.bestsellers-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.bestsellers-content-wrapper {
+  position: relative;
+  height: 464px;
+  width: 335px;
+}
+
+.bestsellers-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bestsellers-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bestsellers-descr-wrapper {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  backdrop-filter: blur(10px);
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.bestsellers-item:hover .bestsellers-descr-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bestsellers-descr-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bestsellers-item {
+  display: none;
+}
+
+.bestsellers-item:nth-child(-n + 1) {
+  display: flex;
+}
+
+/*<----------768px--------->*/
+
+@media screen and (min-width: 768px) {
+  .bestsellers-section {
+    gap: 50px;
+  }
+
+  .bestsellers-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .bestsellers-item:nth-child(-n + 2) {
+    display: flex;
+  }
+}
+
+/*<----------1200px--------->*/
+
+@media screen and (min-width: 1200px) {
+  .bestsellers-item:nth-child(-n + 3) {
+    display: flex;
+  }
+}
