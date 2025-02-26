@@ -37,15 +37,20 @@ contentWrappers.forEach(wrapper => {
 
 // Load more btn
 
-const loadMoreBtn = document.querySelector('.load-more-btn');
+const loadMoreBtn = document.querySelector('.load-more-ingr-btn');
 const allItems = document.querySelectorAll('.ingredients-item');
 
-let visibleItems = 2;
+let visibleItems = 0;
 const itemsPerLoad = {
   mobile: 2,
   tablet: 2,
   desktop: 4,
 };
+
+function setInitialVisibleItems() {
+  visibleItems = itemsPerLoad[getCurrentDevice()];
+  showVisibleItems();
+}
 
 function loadMoreItems() {
   visibleItems += itemsPerLoad[getCurrentDevice()];
@@ -83,4 +88,4 @@ window.addEventListener('resize', () => {
 
 loadMoreBtn.addEventListener('click', loadMoreItems);
 
-showVisibleItems();
+setInitialVisibleItems();

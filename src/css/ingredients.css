@@ -160,7 +160,7 @@
   max-width: 300px;
 }
 
-.load-more-btn {
+.load-more-ingr-btn {
   cursor: pointer;
   margin-top: 32px;
   padding: 12px 28px;
@@ -171,9 +171,9 @@
   transition: transform 0.1s cubic-bezier(0.42, 0, 1, 1);
 }
 
-.load-more-btn:hover,
-.load-more-btn:active,
-.load-more-btn:focus {
+.load-more-ingr-btn:hover,
+.load-more-ingr-btn:active,
+.load-more-ingr-btn:focus {
   transform: scale(1.07);
 }
 
