@@ -1,14 +1,20 @@
-document
-  .querySelector('.scroll-down-btn')
-  .addEventListener('click', function (event) {
-    event.preventDefault();
+function scrollToSection(buttonSelector, targetSection) {
+  document
+    .querySelector(buttonSelector)
+    .addEventListener('click', function (event) {
+      event.preventDefault();
 
-    const headerHeight = document.querySelector('header').offsetHeight;
-    const nextSection = document.querySelector('#ingredients');
-    const sectionPosition = nextSection.offsetTop;
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const section = document.querySelector(targetSection);
+      const sectionPosition = section.offsetTop;
 
-    window.scrollTo({
-      top: sectionPosition - headerHeight,
-      behavior: 'smooth',
+      window.scrollTo({
+        top: sectionPosition - headerHeight,
+        behavior: 'smooth',
+      });
     });
-  });
+}
+
+scrollToSection('.hero-buy-btn', '#products');
+scrollToSection('.hero-how-btn', '#process');
+scrollToSection('.scroll-down-btn', '#ingredients');
