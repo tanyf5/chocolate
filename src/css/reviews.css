@@ -1,0 +1,152 @@
+.reviews-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-title-span {
+  color: #fd9222;
+}
+
+.swiper {
+  margin-top: 90px;
+  max-width: 335px;
+  height: 242px;
+  display: flex;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 335px;
+  max-height: 200px;
+  background-color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+.swiper-slide img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.reviews-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 56px 18px 42px;
+}
+
+.reviews-card-text {
+  text-align: center;
+}
+
+.swiper-custom-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 12px;
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+  background: transparent;
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leave-review-btn {
+  cursor: pointer;
+  margin-top: 32px;
+  padding: 12px 28px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  transition: transform 0.1s cubic-bezier(0.42, 0, 1, 1);
+}
+
+.leave-review-btn:hover,
+.leave-review-btn:active,
+.leave-review-btn:focus {
+  transform: scale(1.07);
+}
+
+/*<----------768px--------->*/
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    max-width: 768px;
+    padding: 50px 32px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+
+  .swiper {
+    max-width: 704px;
+  }
+
+  .swiper-slide {
+    max-width: 344px;
+  }
+
+  .reviews-text-wrap {
+    padding: 56px 18px 26px;
+  }
+
+  .leave-review-btn {
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 14px 40px;
+  }
+}
+
+/*<----------1200px--------->*/
+
+@media screen and (min-width: 1200px) {
+  .reviews-section {
+    max-width: 1200px;
+    padding: 60px 32px;
+  }
+  .swiper {
+    max-width: 1136px;
+  }
+  .swiper-slide {
+    max-width: 360px;
+  }
+
+  .reviews-text-wrap {
+    padding: 56px 24px 24px;
+  }
+
+  .swiper-custom-navigation {
+    display: none;
+  }
+}

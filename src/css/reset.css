@@ -1,34 +1,67 @@
+:root {
+  color: #111111;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #111111;
+  background-color: #fafafa;
+}
+
+label {
+  cursor: default;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
+p,
+button,
 ul {
-  margin: 0;
   padding: 0;
-  list-style: none;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
+a,
 button {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.02em;
   cursor: pointer;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
