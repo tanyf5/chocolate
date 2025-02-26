@@ -25,3 +25,18 @@ document.querySelectorAll('.mobile-menu-item').forEach(link => {
 document.querySelectorAll('.footer-menu-item').forEach(link => {
   link.addEventListener('click', scrollToSection);
 });
+
+document
+  .querySelector('.header-logo-link')
+  .addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const nextSection = document.querySelector('#hero');
+    const sectionPosition = nextSection.offsetTop;
+
+    window.scrollTo({
+      top: sectionPosition - headerHeight,
+      behavior: 'smooth',
+    });
+  });
