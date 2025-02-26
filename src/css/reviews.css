@@ -8,16 +8,6 @@
   padding: 40px 20px;
 }
 
-.section-title {
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.section-title-span {
-  color: #fd9222;
-}
-
 .swiper {
   margin-top: 90px;
   max-width: 335px;
@@ -104,9 +94,6 @@
   .reviews-section {
     max-width: 768px;
     padding: 50px 32px;
-  }
-  .section-title {
-    font-size: 24px;
   }
 
   .swiper {

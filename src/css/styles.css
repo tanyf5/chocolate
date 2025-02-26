@@ -5,6 +5,7 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./benefits.css');
+@import url('./ingredients.css');
 @import url('./reviews.css');
 @import url('./footer.css');
 
@@ -14,4 +15,33 @@
 
 .benefits {
   background-color: #1e1823;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 283px;
+}
+
+.section-title-span {
+  color: #fd9222;
+}
+
+/*<----------768px--------->*/
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 24px;
+    max-width: 411px;
+  }
+}
+
+/*<----------1200px--------->*/
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    max-width: 486px;
+  }
 }
