@@ -1,0 +1,149 @@
+.process-section {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 335px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.film-images-wrapper {
+  width: 335px;
+  height: 500px;
+  border: none;
+
+  position: relative;
+}
+
+.svg-wrapper {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 9px 10px 10px 11px;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.play-icon {
+  width: 14px;
+  height: 15px;
+  fill: #ffffff;
+  z-index: 2;
+
+  transition: transform 0.1s cubic-bezier(0.42, 0, 1, 1);
+}
+
+.play-icon:hover,
+.play-icon:active,
+.play-icon:focus {
+  transform: scale(1.2);
+}
+
+.process-paused {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.process-paused img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.process-wrapper {
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.process-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.process-item {
+  padding-left: 16px;
+  position: relative;
+}
+
+.process-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  transform: translateY(-50%);
+}
+
+/*<----------768px--------->*/
+
+@media screen and (min-width: 768px) {
+  .process-section {
+    gap: 50px;
+  }
+
+  .process-main-wrapper {
+    width: 614px;
+  }
+
+  .film-images-wrapper {
+    width: 614px;
+    height: 400px;
+  }
+
+  .process-wrapper {
+    max-width: 500px;
+    padding: 32px;
+  }
+
+  .process-title {
+    max-width: 350px;
+  }
+}
+
+/*<----------1200px--------->*/
+
+@media screen and (min-width: 1200px) {
+  .process-main-wrapper {
+    width: 1136px;
+    flex-direction: row;
+  }
+
+  .film-images-wrapper {
+    width: 600px;
+  }
+
+  .process-wrapper {
+    align-items: self-start;
+    justify-content: center;
+    gap: 26px;
+  }
+
+  .process-list {
+    gap: 22px;
+  }
+}
