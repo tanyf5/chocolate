@@ -67,6 +67,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: transform 0.1s cubic-bezier(0.42, 0, 1, 1);
+}
+
+.hero-buy-btn:hover,
+.hero-buy-btn:active,
+.hero-buy-btn:focus {
+  transform: scale(1.1);
 }
 
 .hero-how-btn {
@@ -82,6 +90,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: transform 0.1s cubic-bezier(0.42, 0, 1, 1);
+}
+
+.hero-how-btn:hover,
+.hero-how-btn:active,
+.hero-how-btn:focus {
+  transform: scale(1.1);
 }
 
 .hero-scroll-wrapper {
@@ -100,6 +116,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: transform 0.1s cubic-bezier(0.42, 0, 1, 1);
+}
+
+.scroll-down-btn:hover,
+.scroll-down-btn:active,
+.scroll-down-btn:focus {
+  transform: scale(1.2);
 }
 
 .scroll-down-par {
