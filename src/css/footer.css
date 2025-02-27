@@ -121,6 +121,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  align-items: center;
+}
+
+.footer-label {
+  position: relative;
 }
 
 .footer-input {
@@ -154,6 +159,24 @@
   border: 1px solid #fd9222;
 }
 
+.error-icon {
+  display: none;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.footer-input.invalid {
+  border-color: #e74a3b;
+}
+
+.footer-input.invalid + .error-icon {
+  display: block;
+}
+
 .footer-submit-btn {
   background-color: #fd9222;
   font-size: 14px;
@@ -168,6 +191,73 @@
 
 .footer-submit-btn:active {
   transform: scale(1.1);
+}
+
+.error-message {
+  color: #e74a3b;
+  font-size: 14px;
+  margin-top: 5px;
+  max-width: 148px;
+  display: none;
+}
+
+/*<----------Modal---------->*/
+
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.subscribe-modal {
+  display: none;
+  width: 335px;
+  height: 180px;
+  background-color: #1e1823;
+  padding: 40px;
+  border: 1px solid #3d3d3d;
+  border-radius: 15px;
+
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-sbsrcb-modal-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  transition: transform 0.1s cubic-bezier(0.42, 0, 1, 1);
+}
+
+.close-sbsrcb-modal-btn:hover,
+.close-sbsrcb-modal-btn:active,
+.close-sbsrcb-modal-btn:focus {
+  transform: scale(1.2);
+}
+
+.sbsrcb-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sbsrcb-modal-text {
+  text-align: center;
 }
 
 /*<----------768px--------->*/
@@ -220,6 +310,10 @@
   .footer-menu-item:nth-child(4) {
     display: none;
   }
+
+  .subscribe-modal {
+    width: 375px;
+  }
 }
 
 /*<----------1200px--------->*/
@@ -243,5 +337,9 @@
   .footer-submit-btn:focus,
   .footer-submit-btn:hover {
     transform: scale(1.1);
+  }
+
+  .subscribe-modal {
+    width: 400px;
   }
 }

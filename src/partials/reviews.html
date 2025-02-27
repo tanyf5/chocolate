@@ -82,4 +82,103 @@
     </div>
   </div>
   <button class="leave-review-btn">Leave a review</button>
+
+  <!------Modal------>
+  <div class="reviews-modal-backdrop"></div>
+  <div class="reviews-modal" id="reviews-modal">
+    <button class="close-review-modal">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 6L6 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6 6L18 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <div class="reviews-modal-content">
+      <h2 class="review-modal-title">
+        Leave a review about
+        <span class="section-title-span">our chocolate</span>
+      </h2>
+      <form class="review-form">
+        <label class="review-field-input"
+          >Name
+          <input type="text" name="user-name" class="review-input" required />
+        </label>
+        <label class="review-field-input"
+          >Email<input
+            type="email"
+            name="user-email"
+            class="review-input"
+            required
+        /></label>
+        <label class="review-field-input"
+          >Phone number<input
+            type="tel"
+            name="user-tel"
+            class="review-input"
+            required
+        /></label>
+        <label class="review-field-input"
+          >Comment
+          <textarea name="user-comment" class="review-text"></textarea>
+        </label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" class="form-checkbox" required />
+          <label class="review-field-checkbox"
+            >I accept the terms and conditions of the
+            <a href="" class="privacy-policy">Privacy Policy</a></label
+          >
+        </div>
+        <button type="submit" class="review-form-send-btn">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="thank-modal-backdrop"></div>
+  <div class="thank-wrapper">
+    <button class="close-review-thank-modal">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 6L6 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6 6L18 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <h2 class="thank-title">You're awesome!</h2>
+    <p class="thank-text">
+      Thanks for your review – we really appreciate it and can't wait to share
+      more sweet updates with you!
+    </p>
+  </div>
 </section>
