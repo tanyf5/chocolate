@@ -3,6 +3,8 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+// Swiper
+
 const swiperContainer = document.querySelector('.swiper');
 
 const swiper = new Swiper(swiperContainer, {
@@ -36,6 +38,8 @@ const swiper = new Swiper(swiperContainer, {
   mousewheel: false,
   effect: 'slide',
 });
+
+// Modal
 
 const reviewForm = document.querySelector('.review-form');
 const modal = document.querySelector('#reviews-modal');

@@ -1,3 +1,5 @@
+// Scroll + header height
+
 const scrollToSection = event => {
   event.preventDefault();
 

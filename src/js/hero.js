@@ -1,3 +1,5 @@
+// Scroll + header height
+
 function scrollToSection(buttonSelector, targetSection) {
   document
     .querySelector(buttonSelector)
